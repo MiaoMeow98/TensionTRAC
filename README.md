@@ -46,7 +46,7 @@ Classification is evaluated on 3,593 labeled clips (reverse / unsure excluded):
 
 Splits: Stratified 5-fold and video-grouped 4-fold cross-validation.
 
-## ② Our Implementation Setup
+## ② Initialization
 
 Python 3.10, PyTorch 2.9.1 (CUDA 12.8):
 
@@ -67,7 +67,14 @@ Place weights in `TRAC_checkpoints/`:
 - `checkpoint.pyth` — model weights 
 - `TensionTRAC_checkpoint.yaml` — according configuration file
 
-## ④ Run
+## ④ Run TensionTRAC
+
+<p align="center">
+  <img src="assets/TensionTRAC.png" width="95%" alt="SurgTension Dataset Visualization">
+</p>
+<p align="center">
+  <em>TensionTRAC framework.</em>
+</p>
 
 **1. Trajectories** (CoTracker3 with uniform grid point sampling; e.g. 400 points → `--grid-size 20`, 529 points → `--grid-size 23`):
 
