@@ -1,5 +1,5 @@
 # Recognizing Tissue Tension Toward Surgical Skill Assessment
-> 🚧 **Code is currently being prepared/tested and is expected to be finally released by September 25, 2026.**
+> 🚧 **Code and data are expected to be finally released before September 25, 2026.**
 
 [![arXiv](https://img.shields.io/badge/arXiv-2608.17935-b31b1b.svg)](https://arxiv.org/abs/2608.17935)
 
