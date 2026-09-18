@@ -17,6 +17,13 @@ Main contributions from this work:
 
 ## ①  SurgTension Dataset
 
+<p align="center">
+  <img src="assets/SurgTension.png" width="85%" alt="SurgTension Dataset Visualization">
+</p>
+<p align="center">
+  <em>Visual examples of SurgTension.</em>
+</p>
+
 **SurgTension** is constructed from seven robot-assisted rectal cancer resection videos recorded during routine clinical procedures at the teaching hospital using the da Vinci surgical platform. We release this dataset to facilitate future research on clinically meaningful surgical video understanding. For further details on the data collection and annotations, please refer to our paper.
 
 > 📢 **Dataset Release:** The dataset will be available at [this link](#) soon. 
