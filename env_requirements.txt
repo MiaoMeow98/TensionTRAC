@@ -1,0 +1,35 @@
+# TensionTRAC Python environment
+# Captured from the experiment venv used for the paper:
+#   Python 3.10.8
+#   PyTorch 2.9.1 + CUDA 12.8 (cu128)
+#   source venv: env_dado
+#
+# Create a venv, then install:
+#   python3.10 -m venv .venv
+#   source .venv/bin/activate
+#   pip install -U pip
+#   pip install -r requirements.txt
+#
+# For an exact replica of that venv (including Jupyter, SAM-2, Transformers):
+#   pip install -r requirements.lock.txt
+#
+# Video Swin feature extraction uses a separate MMCV 1.x environment;
+# see src/feature_extraction/README.md.
+
+--extra-index-url https://download.pytorch.org/whl/cu128
+
+torch==2.9.1
+torchvision==0.24.1
+numpy==2.2.6
+scipy==1.15.3
+scikit-learn==1.7.2
+PyYAML==6.0.3
+einops==0.8.2
+fvcore==0.1.5.post20221221
+yacs==0.1.8
+iopath==0.1.10
+sympy==1.14.0
+opencv-python==4.12.0.88
+pillow==12.1.0
+matplotlib==3.10.8
+tqdm==4.67.1

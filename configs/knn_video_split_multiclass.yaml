@@ -1,0 +1,30 @@
+dataset:
+  root: ../../SurgTension
+  annotations: data/annotation/tension_clip_annotations.csv
+  label_mode: multiclass
+  flatten: true
+  require_feature: true
+  include_all_clips: false
+evaluation:
+  split: video
+  k_fold: true
+  n_splits: 4
+  seed: 0
+  k_values:
+  - 1
+  - 3
+  - 5
+  - 7
+  output_csv: results/knn_video_split_multiclass.csv
+  merge_video_groups:
+  - - Dorsal_rectal_dissection_sample1
+    - eb7a169d-024a-4756-8d62-e2f6ce160ff8_1556292
+runs:
+- name: slowfast_video_tension_level
+  feature: slowfast
+- name: timesformer_video_tension_level
+  feature: timesformer
+- name: video_swin_video_tension_level
+  feature: video_swin
+- name: tension_trac_video_tension_level
+  feature: tension_trac

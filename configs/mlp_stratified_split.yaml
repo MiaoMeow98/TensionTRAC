@@ -1,0 +1,31 @@
+dataset:
+  root: ../../SurgTension
+  annotations: data/annotation/tension_clip_annotations.csv
+  label_mode: binary
+  flatten: true
+  require_feature: true
+  include_all_clips: false
+evaluation:
+  classifier: mlp
+  split: stratified
+  k_fold: true
+  n_splits: 5
+  seed: 0
+  output_csv: results/mlp_stratified_split.csv
+  hidden_dim: 256
+  dropout: 0.3
+  lr: 0.001
+  weight_decay: 0.0001
+  batch_size: 64
+  max_epochs: 100
+  patience: 15
+  val_fraction: 0.15
+runs:
+- name: slowfast_stratified_split_mlp
+  feature: slowfast
+- name: timesformer_stratified_split_mlp
+  feature: timesformer
+- name: video_swin_stratified_split_mlp
+  feature: video_swin
+- name: tension_trac_stratified_split_mlp
+  feature: tension_trac

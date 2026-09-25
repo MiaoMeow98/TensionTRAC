@@ -1,0 +1,27 @@
+dataset:
+  root: ../../SurgTension
+  annotations: data/annotation/tension_clip_annotations.csv
+  label_mode: cascade
+  flatten: true
+  require_feature: true
+  include_all_clips: false
+evaluation:
+  split: stratified
+  k_fold: true
+  n_splits: 5
+  seed: 0
+  k_values:
+  - 1
+  - 3
+  - 5
+  - 7
+  output_csv: results/knn_cascade_stratified_split.csv
+runs:
+- name: slowfast_stratified_cascade
+  feature: slowfast
+- name: timesformer_stratified_cascade
+  feature: timesformer
+- name: video_swin_stratified_cascade
+  feature: video_swin
+- name: tension_trac_stratified_cascade
+  feature: tension_trac
