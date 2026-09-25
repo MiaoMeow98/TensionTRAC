@@ -1,5 +1,7 @@
 # Recognizing Tissue Tension Toward Surgical Skill Assessment
 
+> 🚧 **Note:** The SurgTension dataset has undergone the ethical review by the relevant METC committee. We are currently coordinating its release through a secure, university-managed research data platform to ensure appropriate long-term data management and access. The dataset will be made available once this process is completed.
+
 [![arXiv](https://img.shields.io/badge/arXiv-2608.17935-b31b1b.svg)](https://arxiv.org/abs/2608.17935)
 
 Official code for **[Beyond Instrument Motion: Recognizing Tissue Tension Toward Surgical Skill Assessment](https://arxiv.org/abs/2608.17935)**, an **Oral** paper at the [Medical Video Understanding (MedVidU)](https://medvidu.github.io/) workshop at [ECCV 2026](https://eccv.ecva.net/).

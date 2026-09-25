@@ -1,6 +1,6 @@
 
 set -euo pipefail
-source /scratch/p314485/tension_recognition_in_robot_assisted_surgery_SSS/run_env.sh
+source /.../TensionTRAC/run_env.sh
 
 cd "${REPO}"
 mkdir -p results results/figures
